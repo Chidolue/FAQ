@@ -3,3 +3,29 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    display: flex;
+
+}
+
+.outter {
+    background-image: url("faq-accordion-main/assets/images/background-pattern-desktop.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.whole {
+    border: 2px solid black;
+    height: 400px;
+    width: 400px;
+    margin: 1rem;
+}
+
+.outter {
+}
