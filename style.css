@@ -10,4 +10,59 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-size: 100% 30%;
+    background-color: hsl(320, 100%, 97%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(292, 42%, 14%);
+}
+
+.whole {
+    border: 2px solid black;
+    height: 500px;
+    width: 450px;
+    background-color: white;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner {
+    border: 2px solid black;
+    height: 420px;
+    width: 400px;
+}
+
+h1 {
+    display: inline;
+}
+
+.star {
+    width: 30px;
+}
+
+.heading {
+    margin: 0 0 0.5rem 0;
+}
+
+p{
+    margin: 1rem 0 1.5rem 0;
+    color: grey;
+}
+
+#plus-btn {
+    transform: translateY(0.6rem);
+}
+
+#plus-btn:hover {
+    cursor: pointer;
+}
+
+h4 {
+    display: inline;
+}
+
+h4:hover {
+    color: hsl(309, 77%, 45%);
 }
