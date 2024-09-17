@@ -1,29 +1,29 @@
-let paragraph1 = document.getElementById("paragraph1");
-let paragraph2 = document.getElementById("paragraph2");
-let paragraph3 = document.getElementById("paragraph3");
-let paragraph4 = document.getElementById("paragraph4");
-
-let plusBtn = document.getElementById("plus-btn")
 let count = 0;
-let faqsText = ["Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects on HTML, CSS and Javascript. It's suitable for all levels and ideals for portfolio building.", "second", "third", "fourth"]
+let minus = document.getElementById("minus");
+let firstParagraph = document.getElementById("f-paragraph")
+let paragraphs = ["Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and Javascript. It's suitable for all levels and ideal for portfolio building."]
 
-paragraph1.textContent = faqsText[0];
+firstParagraph.textContent = paragraphs[0]
 
-function run() {
-    paragraph1.textContent = "";
+function empty() {
+    firstParagraph.textContent = "";
 }
 
-plusBtn.addEventListener("click", function() {
-    if((count%2)===0){
-        run()
+minus.addEventListener("click", function() {
+    if( (count % 2) === 0) {
+        minus.innerHTML = `
+        <img src="faq-accordion-main/assets/images/icon-plus.svg" alt="plus">
+        `
+        count++
+        empty()
     }
+
     else {
-        paragraph1.textContent = faqsText[0]
-        paragraph2.textContent = faqsText[1]
+        minus.innerHTML = `
+            <img src="faq-accordion-main/assets/images/icon-minus.svg" alt="minus">
+        `
+        count++;
+        firstParagraph.textContent = paragraphs[0]
     }
-    count++
 })
 
-function minus() {
-
-}
