@@ -7,10 +7,13 @@
 body {
     background-color: hsl(275, 100%, 97%);
     color: hsl(292, 42%, 14%);
-    background-image: url("Untitled\ design.png");
-    background-repeat: no-repeat;
-    background-size: 100vw 250px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
     min-height: 100vh;
+    background-image: url("background-image.png");
+    background-repeat: no-repeat;
+    background-size: 100vw 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,38 +22,84 @@ body {
 .whole {
     background-color: white;
     border: 2px solid transparent;
-    height: 540px;
-    width: 550px;
-    border-radius: 15px;
-    padding: 1.8rem;
-    display: flex;
+    min-height: 560px;
+    width: 600px;
+    border-radius: 12px;
+    padding: 2rem;
+}
+
+h2 {
     position: relative;
+    font-size: 16px;
+    padding: 1.5rem 0;
 }
 
-h1 {
-    display: inline;
-    padding-bottom: 1rem;
+h2:hover {
+    cursor: pointer;
+    color: hsl(293, 66%, 47%);
 }
 
-#star {
-    position: relative;
-    right: inherit;
-    top: 12px;
+#minus {
+    position: absolute;
+    top: 20%;
+    padding-left: 20%
 }
 
-img {
-    transform: translateY(-0.3rem);
-    position: fixed;
-    right: 150px;
+#plus {
+    position: absolute;
+    top: 20%;
+    padding-left: 56%
 }
 
-h4 {
-    margin-top: 1.5rem;
-    display: inline;
-    position: relative;
+#plus2 {
+    position: absolute;
+    top: 20%;
+    padding-left: 18%
+}
+
+#plus3 {
+    position: absolute;
+    top: 20%;
+    padding-left: 26%
 }
 
 p {
-    margin: 1.5rem 0;
+    font-size: 16px;
     color: hsl(292, 16%, 49%);
+}
+
+.inline {
+    display: inline-block;
+}
+
+@media screen and (max-width: 576px) {
+    .inline {
+        display: inline;
+    }
+
+    .whole {
+        min-height: 520px;
+        width: 340px;
+    }
+
+    #minus {
+        transform: translateY(25%);
+        padding-left: 30%;
+    }
+
+    #plus {
+        transform: translateY(10%);
+        padding-left: 29%
+    }
+
+    #plus2 {
+        transform: translateY(10%);
+        padding-left: 29.5%
+    }
+
+    #plus3 {
+        transform: translateY(10%);
+        padding-left: 39%
+    }
+
 }
